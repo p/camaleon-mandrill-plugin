@@ -1,0 +1,36 @@
+{
+  "title": "Mandrill",
+  "descr": "",
+  "version": "0.1",
+  "key": "mandrill",
+  "helpers": [
+    "Plugins::Mandrill::MainHelper"
+  ],
+  "options": [
+    {
+      "label": "Settings",
+      "url": "admin_plugin_mandrill_settings_path",
+      "eval_url": true
+    }
+  ],
+  "hooks": {
+    "on_destroy": [
+      "mandrill_on_destroy"
+    ],
+    "on_active": [
+      "mandrill_on_active"
+    ],
+    "on_inactive": [
+      "mandrill_on_inactive"
+    ],
+    "on_upgrade": [
+      "mandrill_on_upgrade"
+    ],
+    "plugin_options": [
+      "mandrill_plugin_options"
+    ],
+    "email": [
+      "mandrill_email"
+    ]
+  }
+}

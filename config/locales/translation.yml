@@ -1,0 +1,20 @@
+en:
+  plugin:
+    mandrill:
+      settings:
+        link_name: 'Settings'
+        title: 'Mandrill settings'
+      form:
+        code: 'Tracking ID'
+      messages:
+        settings_saved: 'Settings saved!'
+es:
+  plugin:
+    mandrill:
+      settings:
+        link_name: 'Preferencias'
+        title: 'Configuración de Mandrill'
+      form:
+        code: 'Tracking ID'
+      messages:
+        settings_saved: '¡Configuración guardada!'
