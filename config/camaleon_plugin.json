@@ -1,0 +1,36 @@
+{
+  "title": "Mandrill",
+  "descr": "",
+  "version": "0.2",
+  "key": "camaleon_mandrill",
+  "helpers": [
+    "Plugins::CamaleonMandrill::MainHelper"
+  ],
+  "options": [
+    {
+      "label": "Settings",
+      "url": "admin_plugin_camaleon_mandrill_settings_path",
+      "eval_url": true
+    }
+  ],
+  "hooks": {
+    "on_destroy": [
+      "camaleon_mandrill_on_destroy"
+    ],
+    "on_active": [
+      "camaleon_mandrill_on_active"
+    ],
+    "on_inactive": [
+      "camaleon_mandrill_on_inactive"
+    ],
+    "on_upgrade": [
+      "camaleon_mandrill_on_upgrade"
+    ],
+    "plugin_options": [
+      "camaleon_mandrill_plugin_options"
+    ],
+    "email": [
+      "camaleon_mandrill_email"
+    ]
+  }
+}

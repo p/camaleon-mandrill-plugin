@@ -1,6 +1,6 @@
 en:
   plugin:
-    mandrill:
+    camaleon_mandrill:
       settings:
         link_name: 'Settings'
         title: 'Mandrill settings'
@@ -10,7 +10,7 @@ en:
         settings_saved: 'Settings saved!'
 es:
   plugin:
-    mandrill:
+    camaleon_mandrill:
       settings:
         link_name: 'Preferencias'
         title: 'Configuración de Mandrill'
