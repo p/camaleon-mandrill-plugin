@@ -8,7 +8,8 @@ class Plugins::CamaleonMandrill::AdminController < Apps::PluginsAdminController
     current_site.set_meta('mandrill_config',
                           {
                             smtp_username: params[:mandrill][:smtp_username],
-                            smtp_password: params[:mandrill][:smtp_password]
+                            smtp_password: params[:mandrill][:smtp_password],
+                            default_from: params[:mandrill][:default_from],
                           })
     flash[:notice] = "#{t('plugin.mandrill.messages.settings_saved')}"
     redirect_to action: :settings

@@ -1,20 +1,30 @@
 en:
   plugin:
-    camaleon_mandrill:
+    mandrill:
       settings:
         link_name: 'Settings'
+      messages:
+        settings_saved: 'Settings saved!'
+    camaleon_mandrill:
+      settings:
         title: 'Mandrill settings'
       form:
         code: 'Tracking ID'
-      messages:
-        settings_saved: 'Settings saved!'
+        smtp_username: 'SMTP username'
+        smtp_password: 'API key'
+        default_from: 'Default from (admin@example.com)'
 es:
   plugin:
-    camaleon_mandrill:
+    mandrill:
       settings:
         link_name: 'Preferencias'
+      messages:
+        settings_saved: '¡Configuración guardada!'
+    camaleon_mandrill:
+      settings:
         title: 'Configuración de Mandrill'
       form:
         code: 'Tracking ID'
-      messages:
-        settings_saved: '¡Configuración guardada!'
+        smtp_username: 'Usuario SMTP'
+        smtp_password: 'API key'
+        default_from: 'Dirección por defecto (admin@example.com)'

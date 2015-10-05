@@ -15,7 +15,8 @@ module Plugins::CamaleonMandrill::MainHelper
     current_site.set_meta('mandrill_config',
                           {
                             smtp_username: '',
-                            smtp_password: ''
+                            smtp_password: '',
+                            default_from: 'admin@example.com'
                           })
   end
 
@@ -35,7 +36,7 @@ module Plugins::CamaleonMandrill::MainHelper
 
   def camaleon_mandrill_email(plugin)
     mandrill_data_config = current_site.get_meta('mandrill_config')
-
+    plugin[:mail_data][:from] = mandrill_data_config[:default_from]
     plugin[:mail_data][:delivery_method] = :smtp
     plugin[:mail_data][:delivery_method_options] = {
       user_name: mandrill_data_config[:smtp_username],
