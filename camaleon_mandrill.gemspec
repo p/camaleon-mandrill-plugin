@@ -7,7 +7,7 @@ require 'camaleon_mandrill/version'
 Gem::Specification.new do |s|
   s.name = 'camaleon_mandrill'
   s.version = CamaleonMandrill::VERSION
-  s.authors = ['Raúl Anatol']
+  s.authors = ['raulanatol']
   s.email = ['raul@natol.es']
   s.homepage = 'http://camaleon.tuzitio.com/store/plugins/10'
   s.summary = ': Summary of CamaleonMandrill.'
