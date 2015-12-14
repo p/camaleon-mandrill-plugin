@@ -1,4 +1,4 @@
-class Plugins::CamaleonMandrill::AdminController < Apps::PluginsAdminController
+class Plugins::CamaleonMandrill::AdminController < CamaleonCms::Apps::PluginsAdminController
 
   def settings
     @mandrill = current_site.get_meta('mandrill_config')
