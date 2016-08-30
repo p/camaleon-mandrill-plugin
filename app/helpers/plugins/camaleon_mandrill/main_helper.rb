@@ -34,7 +34,7 @@ module Plugins::CamaleonMandrill::MainHelper
     arg[:links] << link_to(t('plugin.mandrill.settings.link_name'), admin_plugins_camaleon_mandrill_settings_path)
   end
 
-  def camaleon_mandrill_email(plugin)
+  def camaleon_mandrill_email_late(plugin)
     mandrill_data_config = current_site.get_meta('mandrill_config')
     plugin[:mail_data][:from] = mandrill_data_config[:default_from]
     plugin[:mail_data][:delivery_method] = :smtp

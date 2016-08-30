@@ -29,8 +29,8 @@
     "plugin_options": [
       "camaleon_mandrill_plugin_options"
     ],
-    "email": [
-      "camaleon_mandrill_email"
+    "email_late": [
+      "camaleon_mandrill_email_late"
     ]
   }
 }
